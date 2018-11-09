@@ -85,8 +85,7 @@ def judge_history(history_info, text, title):
 
         if in_foot and foot == len(history_info) - 1:
             print()
-            print('文字在条目创建时加入：' + history_info[len(history_info) - 1][0])
-            break
+            return history_info[len(history_info) - 1][0]
 
         if not in_top and not in_foot:
             top = top + 1
